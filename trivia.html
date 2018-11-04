@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Barlow+Semi+Condensed:400,500,700" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="icon" href="">
+    <title>Space Trivia</title>
+</head>
+<body>
+    <div class="container">
+        <div class="split left">
+            <div class="centered">
+                <div id="countdown-number"></div>
+                <div class="timer">
+                    <svg>
+                        <circle r="90" cx="130" cy="130"></circle>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="split right">
+            <div class="centered">
+            <div class="col-lg-12" id="startGame">
+                <div class="start-game"></div>
+                    <h1>How Well Do You Know Your Home?</h1>
+                    <input id="start-btn" type="button" value="Start">
+                </div>
+                <div id="questions" style="display:none" class="facts">
+                    <p>Which planet in our solar system is the hottest?</p>
+                    <form class="answers">
+                        <input type="radio" name="planet" value="mars" unchecked>Mars
+                        <input type="radio" name="planet" value="venus" unchecked>Venus
+                        <input type="radio" name="planet" value="murcery" unchecked>Mercery
+                        <input type="radio" name="planet" value="saturn" unchecked>Saturn
+                    </form>
+                    <p>How much does a NASA space suite cost?</p>
+                    <form class="answers">
+                        <input type="radio" name="suite" value="12m" unchecked>12 million
+                        <input type="radio" name="suite" value="1bil" unchecked>1 billion
+                        <input type="radio" name="suite" value="55" unchecked>5 thousand
+                        <input type="radio" name="suite" value="1.5mil" unchecked>1.5 million
+                    </form>
+                    <p>Jupiter is the largest planet in our solar system.</p>
+                    <form class="answers">
+                        <input type="radio" name="size" value="true" unchecked>True
+                        <input type="radio" name="size" value="false" unchecked>False
+                    </form>
+                    <p>How many moons does Jupiter have?</p>
+                    <form class="answers">
+                        <input type="radio" name="moons" value="32" unchecked>32
+                        <input type="radio" name="moons" value="4" unchecked>4
+                        <input type="radio" name="moons" value="17" unchecked>17
+                        <input type="radio" name="moons" value="67" unchecked>67
+                    </form>
+                    <p>It takes Neptune 165 earth years to make one orbit around the sun</p>
+                    <form class="answers">
+                            <input type="radio" name="neptune" value="true" unchecked>True
+                            <input type="radio" name="neptune" value="false" unchecked>False
+                        </form>
+                    <p>Which galaxy is closest to our own?</p>
+                    <form class="answers">
+                        <input type="radio" name="galaxy" value="milkyway" unchecked>Milkyway
+                        <input type="radio" name="galaxy" value="sombrero" unchecked>Sombrero
+                        <input type="radio" name="galaxy" value="andromeda" unchecked>Andromeda
+                       <input type="radio" name="galaxy" value="blackeye" unchecked>Black Eye
+                    </form>
+                    <div class="row">
+                        <button class="sub-btn">SUBMIT</button>
+                    </div>
+                </div>
+                <div id="scores" style="display:none">
+                    <h1 class="final-score">FINAL SCORE</h1>
+                    <p class="score-text">Correct Answers: <span id="correctAnswers-text"></span></p>
+                    <p class="score-text">Incorrect Answers: <span id="wrongAnswers-text"></span></p>
+                    <p class="score-text">Unanswered:<span id="unanswered-text"></span></p>
+                    <input id="start-btn" type="button" value="Finish">
+                </div>
+            </div>
+
+                
+    </div> 
+
+    <script type="text/javascript" src="logic.js"></script>
+    
+</body>
+</html>
