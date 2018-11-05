@@ -21,7 +21,7 @@ body {
 
 .right {
   right: 0;
-  background-color: #33DAFF;
+  background-color:#67E6EC;
 }
 
 .centered {
@@ -66,12 +66,17 @@ input[type="radio"]{
   border-radius: 5px;
   border-color: #333;
   margin-top: 25px;
+  margin-bottom: 100px;
 }
 
 #start-btn:hover {
   box-shadow: 5px 5px 5px #333;
   opacity: 50%;
   color: #ff8247; 
+}
+
+.header {
+  margin-bottom: 75px;
 }
 
 .start-game {
@@ -109,11 +114,12 @@ input[type="radio"]{
 }
 
 .final-score {
-  background-color: #333;
   text-decoration-color: #67E6EC;
   text-align: center;
   font-family: 'Audiowide', cursive;
   font-size: 50px;
+  width: 500px;
+  color: #ff8247;
 }
 
 .score-text {
